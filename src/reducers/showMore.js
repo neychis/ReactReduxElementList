@@ -1,13 +1,11 @@
-import { TOGGLE_SHOW_MORE, GET_SHOW_MORE } from '../actions/actionNames'
+import { TOGGLE_SHOW_MORE } from '../actions/actionNames'
 
-const ShowMore = (state = false, action) => {
+const ShowMore = (showMore = false, action) => {
   switch (action.type) {
     case TOGGLE_SHOW_MORE:
-      return !state
-    case GET_SHOW_MORE:
-      return state
+      return !showMore
     default:
-      return state
+      return showMore
   }
 }
 

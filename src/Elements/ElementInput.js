@@ -1,7 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
 import * as actions from '../actions'
-import ShowMore from "./ShowMore"
+import AdditionalOptions from './AdditionalOptions'
 import "../css/elementInput.css"
 
 const ElementInput = ({ dispatch }) => {
@@ -33,14 +33,10 @@ const ElementInput = ({ dispatch }) => {
           Add element
         </button>
       </div>
-      <div>
-        <div style={getShowMore() ? {} : { display: "none" }} >
-          <span>more text</span>
-        </div>
-        <button onClick={toggleShowMore}>
-          {getShowMore() ? 'Show less' : 'Show more'}
-        </button>
-      </div>
+      {getShowMore() && <AdditionalOptions />}
+      <button onClick={toggleShowMore}>
+        {getShowMore() ? 'Show less' : 'Show more'}
+      </button>
     </section>
   )
 }

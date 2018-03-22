@@ -23,5 +23,5 @@ export const addElement = text => {
 export const toggleElement = makeActionCreator(actions.TOGGLE_ELEMENT,'id')
 export const removeElement = makeActionCreator(actions.REMOVE_ELEMENT,'id')
 export const setVisibilityFilter = makeActionCreator(actions.SET_VISIBILITY_FILTER, 'filter')
-export const toggleShowMore = makeActionCreator(actions.TOGGLE_SHOW_MORE)
-export const getShowMore = makeActionCreator(actions.GET_SHOW_MORE)
+export const toggleShowMore = makeActionCreator(actions.TOGGLE_SHOW_MORE, 'ShowMore')
+export const getShowMore = makeActionCreator(actions.GET_SHOW_MORE, 'ShowMore')
