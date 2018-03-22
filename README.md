@@ -1,2 +1,0 @@
-# ReactReduxElementList
-Created with CodeSandbox

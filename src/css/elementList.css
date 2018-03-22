@@ -1,0 +1,37 @@
+.elementList {
+  list-style-type: none;
+  margin-left: 0;
+  /*max-width: 400px;*/
+  padding-left: 0;
+}
+
+.elementList-item {
+  background-color: #b1e587;
+  border: 2px solid #b1e587;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.elementList-item:hover{
+  border: 2px dashed;
+  background-color: #b1e587;
+  color: black;
+}
+
+.elementList-item > a {
+  cursor: pointer;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.elementList-item > a.active {
+  font-style: italic;
+}
+
+.elementList-item-remove {
+  background-color: #b1e587;
+  border: none;
+  cursor: pointer;
+}

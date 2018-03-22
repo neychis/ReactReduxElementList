@@ -1,0 +1,47 @@
+.elementInput {
+  padding: 20px;
+  border: 1px solid #ccb9bc;
+  border-radius: 4px;
+}
+
+.elementInput > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.elementInput-elementName {
+  border-radius: 4px;
+  border: 1px solid #ececec;
+  color: #005005;
+  font-weight: bolder;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.elementInput-elementName:hover {
+  border-color: #ccb9bc;
+}
+
+.elementInput-elementItem-add {
+  background-color: #2e7d32;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 5px;
+  width: 120px;
+}
+
+.elementInput-elementItem-add:hover {
+  font-weight: bold;
+  background-color: #005005;
+  cursor: pointer;
+}
+
+.hint {
+  color: grey;
+  font-style: italic;
+  padding: 0 20px;
+}
